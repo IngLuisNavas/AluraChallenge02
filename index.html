@@ -13,15 +13,15 @@
 <body>
     <h1>Juego del ahorcado - Alura Challenge 02</h1>
     <br>
-    <input id="palabra" type="password">
-    <button>Agregar palabra</button>
+    <input id="palabra" type="password" onkeydown="readKey(event)">
+    <p id="demo"></p>
     <br>
     <br>
-    <button onclick="draw()" id="iniciar">Iniciar el juego</button>
+    <button onclick="drawGallow()" id="iniciar">Iniciar el juego</button>
     <br>
     <div>
         <br>
-        <canvas id="canvas" width="1200" height="800"> </canvas>
+        <canvas id="canvas" width="1250" height="800"> </canvas>
     </div>
     <section>
         <h2>PALABRA</h2>
